@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title> Bharatchand</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="{% url 'home' %}">Back</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        {% comment %} <a class="nav-item nav-link" href="#">Twitter</span></a>
+        <a class="nav-item nav-link" href="{% static 'sample.pdf' %}">Resume</a> {% endcomment %}
+        <a class="nav-item nav-link active" href="{% url 'home' %}"></a>
+      </div>
+      </div>
+      </nav>
+  </header>
+    {% block content %}
+
+        <main role="main">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">job Detail</h1>
+                    <h3 class="lead text-muted ">{{ job.title }}</h3>
+                    <p class="lead text-muted">{{ job.summary }}</p>
+                    <img src="{{ job.image.url }}" height="300" />
+                    {% comment %} <p>
+                    <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+                    </p> {% endcomment %}
+                </div>
+          
+                <div id="insta-footer" class="container text-white-50">
+                  &copy; 2021 Bharatchand
+                </div>
+           </section>
+
+        </main>
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}" ></script>
+    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+   
+  </body>
+</html>

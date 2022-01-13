@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Bharatchand</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+   
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="public/stylesheets/grayscale.css" rel="stylesheet"> -->
+    <link href="public/stylesheets/grayscale.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09a48ef3b2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      {% block nav %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+            </li>
+            {% comment %} <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li> {% endcomment %}
+          
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+            <!-- <li class="nav-item" id="resume-button-li"> 
+              <a id="" class="js-scroll-trigger" href="">Links</a>
+            </li>  -->
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog <span class="sr-only">(current)</span></a>
+            {% comment %} <a class="nav-item nav-link" href="https://twitter.com/GeorgePRees">Twitter</a>
+            <a class="nav-item nav-link" href="#">CV</a> {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {% endblock nav %}
+  <br> <br> 
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <br></br>
+          <img src="{% static 'bharat.jpg' %}" height="300" />
+          <!-- <img class="circularimage" src="public/img/headshot.jpg" alt="madelinezhangheadshot.jpg" height="200"> -->
+          <br><br><br>
+          <h1 class="mx-auto my-0 text-uppercase">Bharatchand Dandamudi</h1>
+          <h2 class="text-black-50 mx-auto mt-2 mb-5">DevOps Engineer  | Lifelong Learner | Freelancer   </h2>
+          <a id="moreButton" href="#about" class="btn btn-primary js-scroll-trigger">More About Me</a>
+        </div>
+     
+    
+          <!-- <h1 class="jumbotron-heading">Bharatchand</h1>
+          <p class="lead text-muted">I love programming and Django in particular!</p>
+           <p>
+            <a href="bctechexpert@gmail.com" class="btn btn-primary my-2">Email Me</a>
+          </p> -->
+         
+        </div>
+      </header>
+      </section>
+      <br> <br> <br> 
+      <!-- About Section -->
+    <section class="about-section text-center">
+      <div id = "about" class="container">
+        <br><br>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-black  mb-4"> Hey There! Im Bharatchand  Working As DevOps Engineer in a  <a href="https://www.globallogic.com/in/"> Globallogic</a> Onsite In Client Location <a href="https://developers.google.com">Google</a> </h2>
+            <p class="text-black-50">    I'm a  DevOps on Google Cloud Platform.  I'm interested in building and testing web apps and mobile apps, Freelancer, and teaching/tutoring (both coding and non-coding things!).  <br /> <br />
+              I have previous experience both in the industry as well as in research roles. For example, I've previously interned at Globallogic Also, bug-bounty hunter at <a href="https://bugcrowd.com/programs">Bugcrowd </a> and I was completed  postgraduate  MSc.computer science.               <br /> <br /> 
+              Above all, I am passionate about altruistic causes using technology. I know ethical hacking concepts and labs computer science fundamentals, including web development, cryptography, and basic algorithms), hardware, networking, fedora server and familiar with ubuntu server and windows 2016 server administration, databases like SQL, PostgreSQL.            
+              <br /> <br />
+              I have <a href="https://rarediseases.info.nih.gov/diseases/9637/spastic-diplegia-cerebral-palsy">Spastic diplegia cerebral palsy</a>  is a form of cerebral palsy, a neurological condition that usually appears in infancy or early childhood, and permanently affects muscle control and coordination. Affected people have increased muscle tone which leads to spasticity (stiff or tight muscles and exaggerated reflexes) in the legs. The arm muscles are generally less affected or not affected at all. Other signs and symptoms may include delayed motor or movement milestones (i.e. rolling over, sitting, standing); walking on toes; and a "scissored" gait (style of walking).
+              <br> As with other types of cerebral palsy, spastic diplegia is usually caused by brain damage, which generally happens before, during, or shortly after birth. Babies born prematurely and with low birth weight are at a higher risk of developing cerebral palsy. The exact cause is often unknown; however, the condition has been associated with genetic abnormalities; congenital brain malformations; maternal infections or fevers; and/or injury before, during or shortly after birth. There is no cure, and treatment options vary depending on the signs and symptoms present in each person and the severity of the condition, and may include physical, occupational and speech therapy, medication and surgery.
+               <br /> <br />
+              In my free time, I enjoy Workouts out, managing startups in online teaching courses, and the making of digital content on my youtube(check out my videos <a href="https://www.youtube.com/channel/UCc2my0oZchzyXyLtJQXHmPw"> click here</a>,  traveling, puzzle hunting, playing board games, and watching the movie, Learning, workout videos    :)     
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+      
+       <!-- Works or Projects  -->
+  {% block work %}  
+  
+   <section class="works-section">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="container" id = "work">
+        <div class="row">
+          {% for job in jobs.all %}
+
+            <div class="col-md-4">
+              <a href="{% url 'detail' job.id %}">
+               <div class="card mb-4 box-shadow">
+                 <img class="card-img-top" src="{{  job.image.url }}">
+                 <div class="card-body">
+                   <h2 class="card-text">{{ job.title }}</h2>
+                 </div>
+                
+              </div>
+              </a>
+            </div>            
+          {% endfor %}
+          </div>
+
+        </div>
+      </div>
+   </section>
+   {% endblock %} 
+ 
+<br> 
+ 
+ <!-- Contact Section -->
+ {% block content %}
+
+ <section id="signup" class="contact-section bg-black"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+        <h2 class="text-black mb-5">Connect with me!</h2>
+        <br><br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+     <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Email</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">
+              <a href="bctechexpert@gmail.com">bctechexpert@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-user-friends text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Socials</h4>
+            <hr class="my-4">
+            <div class="social"> 
+              
+              <a href="https://m.facebook.com/bctechexpert/" class="mx-2"> 
+                <i class="fab fa-facebook iconbig"></i>
+              </a>
+              <a href="https://www.instagram.com/bharatchand_bccp/" class="mx-2">
+                <i class="fab fa-instagram iconbig"></i>
+              </a>
+              <a href="https://in.linkedin.com/in/bharatchanddandamudi" class="mx-2"> 
+                  <i class="fab fa-linkedin iconbig"></i>
+              </a>
+              <a href="https://github.com/bharatchanddandamudi" class="mx-2">
+                <i class="fab fa-github iconbig"></i>
+              </a>
+              <a href="https://www.patreon.com/Bharatchand" class="mx-2">
+                <i class=" fab fa-patreon iconbig"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCc2my0oZchzyXyLtJQXHmPw" class="mx-2"> 
+              <i class="fab fa-youtube iconbig"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCSgXft7qkYI9dnKfvknCo_A" class="mx-2">
+                <i class=" fab fa-youtube iconbig"> </i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Phone</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">
+               +1 (857) 330-4692
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+{% endblock content %}
+
+</main>
+<br>
+<!-- Footer -->
+<footer class="bg-black small text-center text-black-80">
+  <div class="container">
+    &copy; 2021 Bharatchand
+  </div>
+</footer>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="public/vendor/jquery/jquery.min.js"></script>
+<script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="public/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="public/js/grayscale.min.js"></script>
+<!-- <script>
+  $("#resume-button").css('visibility','visible')
+  
+  </script> -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="{% static 'js/bootstrap.js' %}" ></script>
+    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+    
+  </body>
+</html>
