@@ -1,4 +1,4 @@
-web: gunicorn myproject.wsgi
+web: gunicorn application.wsgi
 release: python3 manage.py migrate
 # Local environment
 release:python3 manage.py makemigrations
